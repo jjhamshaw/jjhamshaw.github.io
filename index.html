@@ -13,6 +13,10 @@
 	<meta name="author" content="Jon Hamshaw">
 	<meta name="viewport" content="width=device-width">
 	<style type="text/css">
+		body {
+			min-width: 300px;
+			font-size: 2rem;
+		}
 		.background {
 			/* Prevent vertical gaps */
 			line-height: 0;
@@ -25,57 +29,90 @@
 		}
 		@media (max-width: 2400px) {
 		  .background {
+		  -moz-column-count:    9;
+		  -webkit-column-count: 9;
+		  column-count:         9;
+		  }
+		}
+		@media (max-width: 2000px) {
+		  .background {
+		  -moz-column-count:    8;
+		  -webkit-column-count: 8;
+		  column-count:         8;
+		  }
+		}
+		@media (max-width: 2000px) {
+		  .background {
+		  -moz-column-count:    7;
+		  -webkit-column-count: 7;
+		  column-count:         7;
+		  }
+		}
+		@media (max-width: 1600px) {
+		  .background {
 		  -moz-column-count:    6;
 		  -webkit-column-count: 6;
 		  column-count:         6;
 		  }
 		}
-		@media (max-width: 2000px) {
+		@media (max-width: 1200px) {
 		  .background {
 		  -moz-column-count:    5;
 		  -webkit-column-count: 5;
 		  column-count:         5;
 		  }
 		}
-		@media (max-width: 2000px) {
-		  .background {
-		  -moz-column-count:    5;
-		  -webkit-column-count: 5;
-		  column-count:         5;
-		  }
-		}
-		@media (max-width: 1600px) {
+		@media (max-width: 800px) {
 		  .background {
 		  -moz-column-count:    4;
 		  -webkit-column-count: 4;
 		  column-count:         4;
 		  }
 		}
-		@media (max-width: 1200px) {
+		@media (max-width: 400px) {
 		  .background {
 		  -moz-column-count:    3;
 		  -webkit-column-count: 3;
 		  column-count:         3;
 		  }
 		}
-		@media (max-width: 800px) {
-		  .background {
-		  -moz-column-count:    2;
-		  -webkit-column-count: 2;
-		  column-count:         2;
-		  }
+
+		.no-scroll {
+			overflow: hidden;
+			position: fixed;
 		}
-		@media (max-width: 400px) {
-		  .background {
-		  -moz-column-count:    1;
-		  -webkit-column-count: 1;
-		  column-count:         1;
-		  }
+
+		.background {
+			left: 0px;
+			top: 0px;
+			z-index: -1;
 		}
 
 		.background img {
 			width: 100% !important;
 			height: auto !important;
+		}
+
+		.content {
+	  	width: 100%;
+	  	height: auto;
+	  	/*max-width: 940px;*/
+	  	margin: 0 auto 0 auto;
+		}
+
+		.content section {
+			position: relative;
+			max-width: 80%;
+			margin: 25% auto 25% auto;
+			text-align: center;
+		}
+
+		.content section h1, h2 {
+			font-family: 'Montserrat', sans-serif;
+			letter-spacing: 8px;
+			/*text-transform: uppercase;*/
+			color: #fff;
+			
 		}
 
 		/* image filters */
@@ -86,6 +123,12 @@
 			-moz-filter: sepia(1);
 			-o-filter: sepia(1);
 			-ms-filter: sepia(1);
+
+			-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
 		}
 		.filter img:hover {
 			opacity:1;
@@ -100,7 +143,7 @@
 </head>
 <body>
 	
-<div class="background filter">
+<div class="background filter no-scroll">
 	<img src="assets/images/instagram/10979566_930307177024856_608823305_n.jpg">
 	<img src="assets/images/instagram/11850111_1001759386542243_648984799_n.jpg">
 	<img src="assets/images/instagram/12269744_1558461601069203_34716087_n.jpg">
@@ -130,6 +173,70 @@
 	<img src="assets/images/instagram/12353275_786356444810086_500619451_n.jpg">
 	<img src="assets/images/instagram/11375328_378577782341607_702848826_n.jpg">
 	<img src="assets/images/instagram/12230866_933242606757030_1728611770_n.jpg">
+	<img src="assets/images/instagram/10979566_930307177024856_608823305_n.jpg">
+	<img src="assets/images/instagram/11850111_1001759386542243_648984799_n.jpg">
+	<img src="assets/images/instagram/12269744_1558461601069203_34716087_n.jpg">
+	<img src="assets/images/instagram/12331423_1716361258595200_1758483107_n.jpg">
+	<img src="assets/images/instagram/11199418_817543471676746_1191190541_n.jpg">
+	<img src="assets/images/instagram/11850388_1611009312511750_1021347061_n.jpg">
+	<img src="assets/images/instagram/12276863_102576926779323_906246122_n.jpg">
+	<img src="assets/images/instagram/12331614_856956417755856_1809482124_n.jpg">
+	<img src="assets/images/instagram/11330543_1652970628248015_981378911_n.jpg">
+	<img src="assets/images/instagram/11856817_984060078281179_103624137_n.jpg">
+	<img src="assets/images/instagram/12277026_1518736141776859_1675285110_n.jpg">
+	<img src="assets/images/instagram/12338550_1839854036241212_1446537892_n.jpg">
+	<img src="assets/images/instagram/11351774_858957687474632_1022691397_n.jpg">
+	<img src="assets/images/instagram/11856840_1474849322833388_824744094_n.jpg">
+	<img src="assets/images/instagram/12277382_1682882378599874_869827663_n.jpg">
+	<img src="assets/images/instagram/12338722_212316899100971_400951615_n.jpg">
+	<img src="assets/images/instagram/11939424_1675752836042315_2069544805_n.jpg">
+	<img src="assets/images/instagram/12277658_1673906526218316_1712279066_n.jpg">
+	<img src="assets/images/instagram/12338820_1071147089592172_1177022562_n.jpg">
+	<img src="assets/images/instagram/11357484_486583911498831_1405927618_n.jpg">
+	<img src="assets/images/instagram/12145430_157973641221939_82502992_n.jpg">
+	<img src="assets/images/instagram/12298862_613890102083018_1715236906_n.jpg">
+	<img src="assets/images/instagram/12338828_1070743786298616_422143069_n.jpg">
+	<img src="assets/images/instagram/11373850_980256588692385_785490737_n.jpg">
+	<img src="assets/images/instagram/12224523_915021008533572_1246081507_n.jpg">
+	<img src="assets/images/instagram/12298953_133069323724764_1601869554_n.jpg">
+	<img src="assets/images/instagram/12353275_786356444810086_500619451_n.jpg">
+	<img src="assets/images/instagram/11375328_378577782341607_702848826_n.jpg">
+	<img src="assets/images/instagram/12230866_933242606757030_1728611770_n.jpg">
+	<img src="assets/images/instagram/10979566_930307177024856_608823305_n.jpg">
+	<img src="assets/images/instagram/11850111_1001759386542243_648984799_n.jpg">
+	<img src="assets/images/instagram/12269744_1558461601069203_34716087_n.jpg">
+	<img src="assets/images/instagram/12331423_1716361258595200_1758483107_n.jpg">
+	<img src="assets/images/instagram/11199418_817543471676746_1191190541_n.jpg">
+	<img src="assets/images/instagram/11850388_1611009312511750_1021347061_n.jpg">
+	<img src="assets/images/instagram/12276863_102576926779323_906246122_n.jpg">
+	<img src="assets/images/instagram/12331614_856956417755856_1809482124_n.jpg">
+	<img src="assets/images/instagram/11330543_1652970628248015_981378911_n.jpg">
+	<img src="assets/images/instagram/11856817_984060078281179_103624137_n.jpg">
+	<img src="assets/images/instagram/12277026_1518736141776859_1675285110_n.jpg">
+	<img src="assets/images/instagram/12338550_1839854036241212_1446537892_n.jpg">
+	<img src="assets/images/instagram/11351774_858957687474632_1022691397_n.jpg">
+	<img src="assets/images/instagram/11856840_1474849322833388_824744094_n.jpg">
+	<img src="assets/images/instagram/12277382_1682882378599874_869827663_n.jpg">
+	<img src="assets/images/instagram/12338722_212316899100971_400951615_n.jpg">
+	<img src="assets/images/instagram/11939424_1675752836042315_2069544805_n.jpg">
+	<img src="assets/images/instagram/12277658_1673906526218316_1712279066_n.jpg">
+	<img src="assets/images/instagram/12338820_1071147089592172_1177022562_n.jpg">
+	<img src="assets/images/instagram/11357484_486583911498831_1405927618_n.jpg">
+	<img src="assets/images/instagram/12145430_157973641221939_82502992_n.jpg">
+	<img src="assets/images/instagram/12298862_613890102083018_1715236906_n.jpg">
+	<img src="assets/images/instagram/12338828_1070743786298616_422143069_n.jpg">
+	<img src="assets/images/instagram/11373850_980256588692385_785490737_n.jpg">
+	<img src="assets/images/instagram/12224523_915021008533572_1246081507_n.jpg">
+	<img src="assets/images/instagram/12298953_133069323724764_1601869554_n.jpg">
+	<img src="assets/images/instagram/12353275_786356444810086_500619451_n.jpg">
+	<img src="assets/images/instagram/11375328_378577782341607_702848826_n.jpg">
+	<img src="assets/images/instagram/12230866_933242606757030_1728611770_n.jpg">
+</div>
+
+<div class="content">
+	<section>
+		<h1>are you sure? i am hamsure</h1>
+	</section>
 </div>
 
 <script src="./assets/js/instafeed.min.js" type="text/javascript"></script>
