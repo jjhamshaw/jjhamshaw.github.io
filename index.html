@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en"  
+<html class="no-js" lang="en">
 <head>
 <link rel="icon" 
       type="image/png" 
@@ -8,157 +8,130 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Jon Hamshaw &mdash; Web Developer</title>
+	<title>IAMHAMSURE | JON HAMSHAW</title>
 	<meta name="description" content="Online presence of Jon Hamshaw, a web developer living and working in London">
 	<meta name="author" content="Jon Hamshaw">
-	
-
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" charset="utf-8">
-		$(function(){
-			$('.fade-in').hover(
-				function() {
-					$(this).find('.overlay').fadeIn('slow');
-				},
-				function() {
-					$(this).find('.overlay').fadeOut('slow');
-				}
-			);
-		});
-		
-	</script>
-	
-
-	
-	<script type="text/javascript">
-
-	$(document).ready(function(){
-
-		$('#page_effect').fadeIn(1800);
-
-	});
-
-	</script>
-	
 	<meta name="viewport" content="width=device-width">
-
-	
 	<style type="text/css">
-		
-		
-		body {
- 			 padding: 0;
-  				margin: 0;
-  					background: #47616e url(img/bg.jpg) no-repeat center top;
+		.background {
+			/* Prevent vertical gaps */
+			line-height: 0;
+			-webkit-column-count: 5;
+			-webkit-column-gap:   0px;
+			-moz-column-count:    5;
+			-moz-column-gap:      0px;
+			column-count:         5;
+			column-gap:           0px; 
+		}
+		@media (max-width: 2400px) {
+		  .background {
+		  -moz-column-count:    6;
+		  -webkit-column-count: 6;
+		  column-count:         6;
+		  }
+		}
+		@media (max-width: 2000px) {
+		  .background {
+		  -moz-column-count:    5;
+		  -webkit-column-count: 5;
+		  column-count:         5;
+		  }
+		}
+		@media (max-width: 2000px) {
+		  .background {
+		  -moz-column-count:    5;
+		  -webkit-column-count: 5;
+		  column-count:         5;
+		  }
+		}
+		@media (max-width: 1600px) {
+		  .background {
+		  -moz-column-count:    4;
+		  -webkit-column-count: 4;
+		  column-count:         4;
+		  }
+		}
+		@media (max-width: 1200px) {
+		  .background {
+		  -moz-column-count:    3;
+		  -webkit-column-count: 3;
+		  column-count:         3;
+		  }
+		}
+		@media (max-width: 800px) {
+		  .background {
+		  -moz-column-count:    2;
+		  -webkit-column-count: 2;
+		  column-count:         2;
+		  }
+		}
+		@media (max-width: 400px) {
+		  .background {
+		  -moz-column-count:    1;
+		  -webkit-column-count: 1;
+		  column-count:         1;
+		  }
+		}
 
-  					width: 100%;
-  				display: table;
-}
-		
-		#container {
-	width: 635px;
-	height: 800px;
-	margin: 0 auto;
-	margin-top: 50px;
-	overflow:hidden;
-	text-align:center;
-}
+		.background img {
+			width: 100% !important;
+			height: auto !important;
+		}
 
-#wrapper {
-   width:84px;
-   margin: 0 auto;
-    overflow: auto; /* will contain if #first is longer than #second */
-    text-align:center;
-    padding-top:7px;
-  
-
-}
-
-h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:16px;
-	font-size-adjust:none;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-	letter-spacing: 0px;
-	color: #ffffff;
-	text-align:center;
-	padding-top:10px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}
-	
-
-.button-twitter {
-background: url('img/button-twitter.png') no-repeat;
-width: 24px;
-height: 24px;
-float:left;
-margin-right:6px;
-}
-
-.button-twitter:hover {
-background-position: 0 -24px;
-}
-
-.button-github {
-background: url('img/button-github.png') no-repeat;
-width: 24px;
-height: 24px;
-float:left;
-
-
-}
-
-.button-github:hover {
-background-position: 0 -24px;
-}
-
-.button-linkedin {
-background: url('img/button-linkedin.png') no-repeat;
-width: 24px;
-height: 24px;
-float:left;
-margin-right:6px;
-}
-
-.button-linkedin:hover {
-background-position: 0 -24px;
-}
+		/* image filters */
+		.filter img {
+			opacity:0.6;
+			filter: sepia(1);
+			-webkit-filter: sepia(1);
+			-moz-filter: sepia(1);
+			-o-filter: sepia(1);
+			-ms-filter: sepia(1);
+		}
+		.filter img:hover {
+			opacity:1;
+			filter: sepia(0);
+			-webkit-filter: sepia(0);
+			-moz-filter: sepia(0);
+			-o-filter: sepia(0);
+			-ms-filter: sepia(0);
+		}
 
 	</style>
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-6881481-8']);
-	  _gaq.push(['_setDomainName', 'kim-walker.com']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
 </head>
 <body>
-<div id="page_effect" style="display:none;">
 	
-<div id="container">
-	<img src="img/jon.png" alt="Jon" width="635" height="565" /> <br> <h1>Jon Hamshaw, London based Web Developer</h1> 
-
-<div id="wrapper">
-	<a href="https://twitter.com/jonhamshaw" TARGET="_blank"><div class="button-twitter"></div></a>
-
-<a href="http://uk.linkedin.com/in/jonhamshaw" TARGET="_blank"><div class="button-linkedin"></div></a>
-
-<a href="https://github.com/jjhamshaw" TARGET="_blank"><div class="button-github"></div></a>
-	</div>
-
-
-
-	</div>
+<div class="background filter">
+	<img src="assets/images/instagram/10979566_930307177024856_608823305_n.jpg">
+	<img src="assets/images/instagram/11850111_1001759386542243_648984799_n.jpg">
+	<img src="assets/images/instagram/12269744_1558461601069203_34716087_n.jpg">
+	<img src="assets/images/instagram/12331423_1716361258595200_1758483107_n.jpg">
+	<img src="assets/images/instagram/11199418_817543471676746_1191190541_n.jpg">
+	<img src="assets/images/instagram/11850388_1611009312511750_1021347061_n.jpg">
+	<img src="assets/images/instagram/12276863_102576926779323_906246122_n.jpg">
+	<img src="assets/images/instagram/12331614_856956417755856_1809482124_n.jpg">
+	<img src="assets/images/instagram/11330543_1652970628248015_981378911_n.jpg">
+	<img src="assets/images/instagram/11856817_984060078281179_103624137_n.jpg">
+	<img src="assets/images/instagram/12277026_1518736141776859_1675285110_n.jpg">
+	<img src="assets/images/instagram/12338550_1839854036241212_1446537892_n.jpg">
+	<img src="assets/images/instagram/11351774_858957687474632_1022691397_n.jpg">
+	<img src="assets/images/instagram/11856840_1474849322833388_824744094_n.jpg">
+	<img src="assets/images/instagram/12277382_1682882378599874_869827663_n.jpg">
+	<img src="assets/images/instagram/12338722_212316899100971_400951615_n.jpg">
+	<img src="assets/images/instagram/11939424_1675752836042315_2069544805_n.jpg">
+	<img src="assets/images/instagram/12277658_1673906526218316_1712279066_n.jpg">
+	<img src="assets/images/instagram/12338820_1071147089592172_1177022562_n.jpg">
+	<img src="assets/images/instagram/11357484_486583911498831_1405927618_n.jpg">
+	<img src="assets/images/instagram/12145430_157973641221939_82502992_n.jpg">
+	<img src="assets/images/instagram/12298862_613890102083018_1715236906_n.jpg">
+	<img src="assets/images/instagram/12338828_1070743786298616_422143069_n.jpg">
+	<img src="assets/images/instagram/11373850_980256588692385_785490737_n.jpg">
+	<img src="assets/images/instagram/12224523_915021008533572_1246081507_n.jpg">
+	<img src="assets/images/instagram/12298953_133069323724764_1601869554_n.jpg">
+	<img src="assets/images/instagram/12353275_786356444810086_500619451_n.jpg">
+	<img src="assets/images/instagram/11375328_378577782341607_702848826_n.jpg">
+	<img src="assets/images/instagram/12230866_933242606757030_1728611770_n.jpg">
 </div>
+
+<script src="./assets/js/instafeed.min.js" type="text/javascript"></script>
 </body>
 </html>
