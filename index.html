@@ -13,8 +13,8 @@
 	<meta name="author" content="Jon Hamshaw">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<style type="text/css">
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/typed.css">
 </head>
 <body>
 	
@@ -110,21 +110,53 @@
 
 <div class="content">
 	<section>
-		<h1 class="left title">are you sure?</h1>
-		<h1 class="right title">i am hamsure</h1>
+		<h1 class="question title">
+			<span></span>
+		</h1>
 	</section>
-	<section class="links right">
-		<a href="https://twitter.com/jonhamshaw" TARGET="_blank">
-			twitter
-		</a> <a href="http://uk.linkedin.com/in/jonhamshaw" TARGET="_blank">
-			linkedin
-		</a>
-		<a href="https://github.com/jjhamshaw" TARGET="_blank">
-			github
-		</a>
+	<section class="links hidden">
+		<ul>
+			<li>
+				<a href="https://www.instagram.com/iamhamsure/" TARGET="_blank">instagram</a>		
+			</li>
+			<li>
+				<a href="https://github.com/jjhamshaw" TARGET="_blank">github</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/jonhamshaw" TARGET="_blank">twitter</a>
+			</li>
+			<li>
+				<a href="http://uk.linkedin.com/in/jonhamshaw" TARGET="_blank">linkedin</a>
+			</li>
+		</ul>
 	</section>
 </div>
 
+<div>
+	
+</div>
+
+
 <script src="./assets/js/instafeed.min.js" type="text/javascript"></script>
+<script src="./assets/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="./assets/js/typed-customised.js" type="text/javascript"></script>
+<script>
+  $(function(){
+  		function onTypingComplete() {
+  			$(".links").show();
+  		}
+
+      $(".question span").typed({
+        strings: [
+        	"are you sure?^2000<br>i am hamshaw",
+        	"are you sure?<br>i am hamsure"
+        ],
+        startDelay: 50,
+        typeSpeed: 100,
+        backSpeed: 300,
+        callback: onTypingComplete
+      });
+  });
+</script>
 </body>
 </html>
