@@ -142,20 +142,22 @@
 <script src="./assets/js/typed-customised.js" type="text/javascript"></script>
 <script>
   $(function(){
-  		function onTypingComplete() {
-  			$(".links").show();
-  		}
+  	window.onload = function() {
+			function onTypingComplete() {
+				$(".links").show();
+			}
 
-      $(".question span").typed({
-        strings: [
-        	"are you sure?^2000<br>i am hamshaw",
-        	"are you sure?<br>i am hamsure"
-        ],
-        startDelay: 50,
-        typeSpeed: 100,
-        backSpeed: 300,
-        callback: onTypingComplete
-      });
+	    $(".question span").typed({
+	      strings: [
+	      	"are you sure?^2000<br>i am hamshaw",
+	      	"are you sure?<br>i am hamsure"
+	      ],
+	      startDelay: 50,
+	      typeSpeed: 100,
+	      backSpeed: 300,
+	      callback: onTypingComplete
+	    });
+  	};
   });
 </script>
 </body>
